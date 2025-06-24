@@ -25,7 +25,6 @@ body{
     height: 60px;
     position: fixed;
     top: 0px; /*El header no se alejara del top*/
-    /* background-color: var(--barra); */
 }
 .header__div{
     margin: 0 auto;
@@ -263,35 +262,35 @@ body{
     border-radius: 3px;
 }
 /* ejercicio 7 */
-.tabla-datos__header {
-    background: var(--fondo); 
+.tabla-datos__header{
+    background-color: var(--fondo); 
     color: var(--letra); 
     padding: 18px 0 18px 32px; 
     border-radius: 12px; 
     margin-bottom: 24px; 
 }
-.tabla-datos__principal {
+.tabla-datos__principal{
     padding: 24px; 
     display: block; 
 }
-.tabla-datos__tabla {
+.tabla-datos__tabla{
     width: 800px; 
     height: 500px;
     margin: 0 auto; 
     margin-top: 80px;
     border-collapse: collapse; 
-    background: var(--color_secundario); 
+    background-color: var(--color_secundario); 
     border-radius: 10px; 
     color: var(--fondo);
 }
-.tabla-datos__header th {
-    background: var(--fondo); 
+.tabla-datos__header th{
+    background-color: var(--fondo); 
     color: #fff; 
     padding: 14px 8px; 
     font-size: 20px; 
     border-bottom: 2px solid var(--fondo);
 }
-.tabla-datos__body td {
+.tabla-datos__body td{
     padding: 12px 8px; 
     border: 1px solid var(--fondo); 
     text-align: center; 
@@ -300,7 +299,7 @@ body{
 
 }
 /* ejercicio 8 */
-.footer { 
+.footer{ 
     width: 976px;
     border: 2px solid var(--fondo); 
     position: relative;
@@ -311,18 +310,132 @@ body{
     background-color: var(--barra); 
     text-align: center; 
 }
-.footer__copy { 
+.footer__copy{ 
     margin-bottom: 10px; 
 }
-.footer__link { 
+.footer__link{ 
     display: inline-block; 
     color: var(--letra);
     text-decoration: none; 
     margin-left: 40px; 
 }
 /* ejercicio 9 */
+.tabs__nav{
+    text-align: center; 
+    margin: 24px 0 16px 0; 
+}
+.tabs__nav-link{
+    display: inline-block; 
+    padding: 10px 24px; 
+    background-color: #1a1728; 
+    color: var(--letra); 
+    text-decoration: none; 
+    border-radius: 8px 8px 0 0; 
+    margin: 0 4px; 
+    font-weight: bold; 
+}
+.tabs__nav-link:hover {
+    background-color: #31334b; 
+    color: var(--letra);
+}
+.tabs__panel {
+    text-align: center;
+    display: none; 
+    border-radius: 0 0 8px 8px; 
+    padding: 24px; 
+    margin-top: -4px; 
+}
+.tabs__panel:target {
+    display: block;
+}
+.tabs__panel--uno { 
+    background-color: var(--color_secundario); 
+    color: var(--fondo);
+}
+.tabs__panel--dos { 
+    background-color: rgb(116, 116, 241);
+    color: var(--letra);
+}
+.tabs__panel--tres { 
+    background-color: rgb(253, 90, 123); 
+    color: var(--fondo);
+}
 /* ejercicio 10 */
+.selector-categorias {
+    width: 700px;
+    height: 500px;
+    margin: 0px auto; 
+    padding: 20px; 
+    margin-top: 80px;
+    background: var(--color_secundario); 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+.selector-categorias__titulo {
+    font-size: 40px; 
+    margin-bottom: 25px; 
+    color: var(--fondo); 
+    text-align: center; 
+    padding-bottom: 30px;
+}
+
+.selector-categorias__lista {
+    list-style: none; 
+    padding: 0; 
+}
+
+.selector-categorias__item {
+    margin-bottom: 50px;
+}
+
+.selector-categorias__enlace {
+    display: inline-block; 
+    background-color: var(--fondo); 
+    color: var(--letra); 
+    width: 200px;
+    padding: 15px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 25px; 
+    transition: background-color 0.2s ease; 
+}
+
+.selector-categorias__enlace:hover {
+    background-color: #31334b; 
+    color: var(--letra);
+}
 /* ejercicio 11 */
+.calificaciones {
+    width: 500px;
+    height: 350px;
+    margin: 0 auto; 
+    padding: 20px; 
+    background: var(--card); 
+    border-radius: 8px; 
+    text-align: center; 
+    margin-top: 150px;
+}
+
+.calificaciones__titulo {
+    font-size: 40px; 
+    margin-bottom: 12px; 
+    color: var(--letra); 
+    margin-top: 60px;
+}
+
+.calificaciones__estrellas {
+    font-size: 50px; 
+    color: #ffc107; 
+    margin-bottom: 10px; 
+    margin-top: 30px;
+}
+
+.calificaciones__valor {
+    font-size: 30px; 
+    color: #171933; 
+    margin-top:30px;
+}
 /* ejercicio 12 */
 /* ejercicio 13 */
 /* ejercicio 14 */
