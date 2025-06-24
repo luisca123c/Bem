@@ -111,3 +111,74 @@ body{
     text-decoration: none;
     margin-left: 50px;
 }
+/* ejercicio 3 */
+.formulario{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: var(--barra);
+    width: 500px;
+    border: 3px var(--fondo) solid;
+    border-radius: 10px;
+}
+.formulario__div{
+    height: 100px;
+}
+.formulario__div--first-child:first-child{
+    height: 100px;
+    padding-top: 25px;    
+}
+.formulario__item{
+    color: white;
+    font-size: 30px;
+    padding-top: 0px;
+}
+.formulario__input{
+    height: 30px;
+    width: 200px;
+    background-color: var(--color_secundario);
+    border: var(--fondo) solid 2px;
+    border-radius: 3px;
+    text-align: center;
+    color: black;
+}
+.formulario__input--placeholder::placeholder{
+    color: black;
+}
+.formulario__button{
+    height: 30px;
+    width: 100px;
+    background-color: var(--color_secundario);
+    color: white;
+    border: var(--fondo) solid 2px;
+    border-radius: 3px;
+}
+
+.formulario__button--hover:hover{
+    background-color: var(--fondo);
+    cursor: pointer;
+    border: var(--color_secundario) solid 2px;
+    border-radius: 3px;
+}
+/* ejercicio 4 */
+.checkbox{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}   
+.lista-tarea{
+    margin-top: 20px;
+}
+.lista-tarea__li{
+    list-style: none;
+    font-size: 30px;
+    text-align: left;
+    padding: 30px;
+    margin-top: 30px;
+    
+}
+.lista-tarea__li--has:has(input[type="checkbox"]:checked) {
+    color: #1a1728;
+    text-decoration: line-through; 
+    opacity: 0.8; 
+}
