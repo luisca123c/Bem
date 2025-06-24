@@ -7,30 +7,35 @@
     --card:#3E458E;
     --color_secundario: #abb1f1;
 }
+
 /* reiniciamos los estilos a todo el html */
 *{
     margin: 0;
     padding: 0;
 }
+
 /*definimos estilos al body*/
 body{
     background-color: var(--fondo);
     color: var(--letra);
     height: 200vh;
 }
-/*Header*/
 
+/*Header*/
 .header{
+    /* Contenedor principal del encabezado con navegación fija */
     width: 100vw;
     height: 60px;
     position: fixed;
-    top: 0px; /*El header no se alejara del top*/
+    top: 0px;
 }
 .header__div{
+    /* Contenedor para centrar y organizar los enlaces de navegación */
     margin: 0 auto;
     text-align: center;
 }
 .header__a{
+    /* Estilos base para los enlaces de navegación en el header */
     margin-top: 10px;
     color: var(--letra);
     text-decoration: none;
@@ -42,10 +47,13 @@ body{
     border-radius: 15px;
 }
 .header__a--hover:hover{
+    /* Efecto visual al pasar el ratón sobre los enlaces del header */
     background-color: var(--cuadros);
 }
+
 /* cards contenedora de ejercicios */
 .ejercicios{
+    /* Contenedor principal que encapsula cada ejercicio individual en la página */
     background-color: var(--cuadros);
     border-radius: 15px;
     height: 800px;
@@ -55,11 +63,14 @@ body{
     text-align: center;
 }
 .titulos{
+    /* Estilos para los títulos de cada sección de ejercicio */
     color: var(--letra);
     font-size: 30px;
 }
+
 /* ejercicio 1 */
 .card{
+    /* Contenedor de una tarjeta de información (ej. para un producto o tema) */
     height: 511px;
     width: 610px;
     background-color: var(--card);
@@ -69,6 +80,7 @@ body{
     border-radius: 5px;
 }
 .card__p{
+    /* Párrafo descriptivo dentro de la tarjeta, actúa como un encabezado secundario */
     display: inline-block;
     height: 23px;
     width: 610px;
@@ -78,11 +90,13 @@ body{
     border-bottom: var(--fondo) solid 2px;
 }
 .card__img{
+    /* Imagen principal dentro de la tarjeta */
     display: inline-block;
     height: 400px;
     width: 300px;
 }
 .card__h4{
+    /* Descripción o texto largo dentro de la tarjeta */
     display: inline-block;
     height: 80px;
     width: 610px;
@@ -94,26 +108,32 @@ body{
     text-transform: lowercase;
     background-color: var(--barra);
 }
+
 /* ejercicio 2 */
 .navegacion{
+    /* Barra de navegación secundaria dentro de un ejercicio */
     width: 1000px;
     height: 40px;
     position: relative;
-    top: 30px; 
+    top: 30px;
     background-color: var(--barra);
 }
 .navegacion__div{
+    /* Contenedor para alinear los enlaces dentro de la navegación secundaria */
     padding: 11px;
     margin: 0 auto;
     text-align: center;
 }
 .navegacion__a{
+    /* Estilos para los enlaces de la navegación secundaria */
     color: var(--letra);
     text-decoration: none;
     margin-left: 50px;
 }
+
 /* ejercicio 3 */
 .formulario{
+    /* Contenedor principal de un formulario de entrada de datos */
     text-align: center;
     margin: 0 auto;
     margin-top: 100px;
@@ -123,18 +143,22 @@ body{
     border-radius: 10px;
 }
 .formulario__div{
+    /* Contenedor para agrupar etiqueta y campo de entrada */
     height: 100px;
 }
 .formulario__div--first-child:first-child{
+    /* Ajuste de estilo para el primer campo del formulario */
     height: 100px;
-    padding-top: 25px;    
+    padding-top: 25px;
 }
 .formulario__item{
+    /* Estilos para las etiquetas de los campos del formulario */
     color: white;
     font-size: 30px;
     padding-top: 0px;
 }
 .formulario__input{
+    /* Estilos para los campos de entrada de texto/número/email */
     height: 30px;
     width: 200px;
     background-color: var(--color_secundario);
@@ -144,9 +168,11 @@ body{
     color: black;
 }
 .formulario__input--placeholder::placeholder{
+    /* Estilos para el texto de sugerencia dentro de los campos de entrada */
     color: black;
 }
 .formulario__button{
+    /* Estilos base para los botones de envío del formulario */
     height: 30px;
     width: 100px;
     background-color: var(--color_secundario);
@@ -154,37 +180,43 @@ body{
     border: var(--fondo) solid 2px;
     border-radius: 3px;
 }
-
 .formulario__button--hover:hover{
+    /* Efecto visual al pasar el ratón sobre los botones del formulario */
     background-color: var(--fondo);
     cursor: pointer;
     border: var(--color_secundario) solid 2px;
     border-radius: 3px;
 }
+
 /* ejercicio 4 */
 .checkbox{
+    /* Estilos para los elementos de checkbox */
     display: inline-block;
     width: 25px;
     height: 25px;
-}   
+}
 .lista-tarea{
+    /* Contenedor para una lista de tareas */
     margin-top: 20px;
 }
 .lista-tarea__li{
+    /* Estilos para cada elemento individual de la lista de tareas */
     list-style: none;
     font-size: 30px;
     text-align: left;
     padding: 30px;
     margin-top: 30px;
-    
 }
 .lista-tarea__li--has:has(input[type="checkbox"]:checked) {
+    /* Aplica estilos especiales a un ítem de la lista si su checkbox está marcado */
     color: #1a1728;
-    text-decoration: line-through; 
-    opacity: 0.8; 
+    text-decoration: line-through;
+    opacity: 0.8;
 }
+
 /* ejercicio 5 */
 .galeria{
+    /* Contenedor para cada imagen y su descripción en una galería */
     width: 400px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -195,16 +227,20 @@ body{
     border-radius: 10px;
 }
 .galeria__p{
+    /* Título o descripción corta para cada elemento de la galería */
     font-size: 40px;
     background-color: var(--card);
     border-radius: 10px;
 }
 .galeria__img{
+    /* Estilos para las imágenes dentro de la galería */
     width: 200px;
     height: 300px;
 }
+
 /* ejercicio 6 */
 .alerta{
+    /* Contenedor de un mensaje de alerta o modal, oculto por defecto */
     display: none;
     width: 500px;
     height: 300px;
@@ -213,16 +249,19 @@ body{
     margin-top: 200px;
 }
 .alerta__p{
+    /* Texto principal del mensaje de alerta */
     font-size: 80px;
     padding-top: 60px;
     display: block;
 }
 .alerta_h4{
+    /* Subtítulo o detalle en el mensaje de alerta */
     display: block;
     font-size: 60px;
     margin-top: 20px;
 }
 .boton-alerta__button{
+    /* Botón que activa la visualización de la alerta */
     height: 50px;
     width: 200px;
     font-size: 40px;
@@ -232,19 +271,20 @@ body{
     border-radius: 3px;
     text-decoration: none;
     display:inline-block;
-    
 }
 .boton-alerta__button--hover:hover{
+    /* Efecto hover para el botón que muestra la alerta */
     background-color: var(--fondo);
     cursor: pointer;
     border: var(--color_secundario) solid 2px;
     border-radius: 3px;
 }
-
 .alerta:target{
+    /* Hace visible la alerta cuando su ID es el objetivo en la URL (ej. #alert) */
     display: inline-block;
 }
 .alerta__button{
+    /* Botón dentro de la alerta (ej. para cerrar o reintentar) */
     height: 100px;
     width: 200px;
     font-size: 40px;
@@ -256,193 +296,323 @@ body{
     text-decoration: none;
 }
 .alerta__button--hover:hover{
+    /* Efecto hover para el botón dentro de la alerta */
     background-color: var(--fondo);
     cursor: pointer;
     border: var(--color_secundario) solid 2px;
     border-radius: 3px;
 }
+
 /* ejercicio 7 */
 .tabla-datos__header{
-    background-color: var(--fondo); 
-    color: var(--letra); 
-    padding: 18px 0 18px 32px; 
-    border-radius: 12px; 
-    margin-bottom: 24px; 
+    /* Estilos para el encabezado de la tabla de datos */
+    background-color: var(--fondo);
+    color: var(--letra);
+    padding: 18px 0 18px 32px;
+    border-radius: 12px;
+    margin-bottom: 24px;
 }
 .tabla-datos__principal{
-    padding: 24px; 
-    display: block; 
+    /* Contenedor que envuelve la tabla de datos */
+    padding: 24px;
+    display: block;
 }
 .tabla-datos__tabla{
-    width: 800px; 
+    /* Estilos generales para la tabla de datos */
+    width: 800px;
     height: 500px;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-top: 80px;
-    border-collapse: collapse; 
-    background-color: var(--color_secundario); 
-    border-radius: 10px; 
+    border-collapse: collapse;
+    background-color: var(--color_secundario);
+    border-radius: 10px;
     color: var(--fondo);
 }
 .tabla-datos__header th{
-    background-color: var(--fondo); 
-    color: #fff; 
-    padding: 14px 8px; 
-    font-size: 20px; 
+    /* Estilos para las celdas de encabezado de la tabla (columnas) */
+    background-color: var(--fondo);
+    color: #fff;
+    padding: 14px 8px;
+    font-size: 20px;
     border-bottom: 2px solid var(--fondo);
 }
 .tabla-datos__body td{
-    padding: 12px 8px; 
-    border: 1px solid var(--fondo); 
-    text-align: center; 
-    font-size: 30px; 
+    /* Estilos para las celdas de datos en el cuerpo de la tabla */
+    padding: 12px 8px;
+    border: 1px solid var(--fondo);
+    text-align: center;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
+
 /* ejercicio 8 */
-.footer{ 
+.footer{
+    /* Contenedor principal del pie de página */
     width: 976px;
-    border: 2px solid var(--fondo); 
+    border: 2px solid var(--fondo);
     position: relative;
     top: 700px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 10px;
-    background-color: var(--barra); 
-    text-align: center; 
+    background-color: var(--barra);
+    text-align: center;
 }
-.footer__copy{ 
-    margin-bottom: 10px; 
+.footer__copy{
+    /* Texto de derechos de autor en el pie de página */
+    margin-bottom: 10px;
 }
-.footer__link{ 
-    display: inline-block; 
+.footer__link{
+    /* Enlaces dentro del pie de página */
+    display: inline-block;
     color: var(--letra);
-    text-decoration: none; 
-    margin-left: 40px; 
+    text-decoration: none;
+    margin-left: 40px;
 }
+
 /* ejercicio 9 */
 .tabs__nav{
-    text-align: center; 
-    margin: 24px 0 16px 0; 
+    /* Contenedor de la barra de navegación para las pestañas */
+    text-align: center;
+    margin: 24px 0 16px 0;
 }
 .tabs__nav-link{
-    display: inline-block; 
-    padding: 10px 24px; 
-    background-color: #1a1728; 
-    color: var(--letra); 
-    text-decoration: none; 
-    border-radius: 8px 8px 0 0; 
-    margin: 0 4px; 
-    font-weight: bold; 
+    /* Estilos para los enlaces individuales de cada pestaña */
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #1a1728;
+    color: var(--letra);
+    text-decoration: none;
+    border-radius: 8px 8px 0 0;
+    margin: 0 4px;
+    font-weight: bold;
 }
 .tabs__nav-link:hover {
-    background-color: #31334b; 
+    /* Efecto hover para los enlaces de las pestañas */
+    background-color: #31334b;
     color: var(--letra);
 }
 .tabs__panel {
+    /* Contenedor de contenido para cada panel de pestaña (oculto por defecto) */
     text-align: center;
-    display: none; 
-    border-radius: 0 0 8px 8px; 
-    padding: 24px; 
-    margin-top: -4px; 
+    display: none;
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+    margin-top: -4px;
 }
 .tabs__panel:target {
+    /* Hace visible el panel de la pestaña cuando su ID coincide con el hash de la URL */
     display: block;
 }
-.tabs__panel--uno { 
-    background-color: var(--color_secundario); 
+.tabs__panel--uno {
+    /* Estilos de fondo y color específicos para el primer panel de pestaña */
+    background-color: var(--color_secundario);
     color: var(--fondo);
 }
-.tabs__panel--dos { 
+.tabs__panel--dos {
+    /* Estilos de fondo y color específicos para el segundo panel de pestaña */
     background-color: rgb(116, 116, 241);
     color: var(--letra);
 }
-.tabs__panel--tres { 
-    background-color: rgb(253, 90, 123); 
+.tabs__panel--tres {
+    /* Estilos de fondo y color específicos para el tercer panel de pestaña */
+    background-color: rgb(253, 90, 123);
     color: var(--fondo);
 }
+
 /* ejercicio 10 */
 .selector-categorias {
+    /* Contenedor principal para un selector de categorías con enlaces */
     width: 700px;
     height: 500px;
-    margin: 0px auto; 
-    padding: 20px; 
+    margin: 0px auto;
+    padding: 20px;
     margin-top: 80px;
-    background: var(--color_secundario); 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
+    background-color: var(--color_secundario);
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
-
 .selector-categorias__titulo {
-    font-size: 40px; 
-    margin-bottom: 25px; 
-    color: var(--fondo); 
-    text-align: center; 
+    /* Título del componente selector de categorías */
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: var(--fondo);
+    text-align: center;
     padding-bottom: 30px;
 }
-
 .selector-categorias__lista {
-    list-style: none; 
-    padding: 0; 
+    /* Lista que contiene las diferentes categorías */
+    list-style: none;
+    padding: 0;
 }
-
 .selector-categorias__item {
+    /* Cada elemento individual de la lista de categorías */
     margin-bottom: 50px;
 }
-
 .selector-categorias__enlace {
-    display: inline-block; 
-    background-color: var(--fondo); 
-    color: var(--letra); 
+    /* Estilos para los enlaces de cada categoría */
+    display: inline-block;
+    background-color: var(--fondo);
+    color: var(--letra);
     width: 200px;
-    padding: 15px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-size: 25px; 
-    transition: background-color 0.2s ease; 
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.2s ease;
 }
-
 .selector-categorias__enlace:hover {
-    background-color: #31334b; 
+    /* Efecto hover para los enlaces de categorías */
+    background-color: #31334b;
     color: var(--letra);
 }
+
 /* ejercicio 11 */
 .calificaciones {
+    /* Contenedor para mostrar una calificación de producto (estrellas y valor numérico) */
     width: 500px;
     height: 350px;
-    margin: 0 auto; 
-    padding: 20px; 
-    background: var(--card); 
-    border-radius: 8px; 
-    text-align: center; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--card);
+    border-radius: 8px;
+    text-align: center;
     margin-top: 150px;
 }
-
 .calificaciones__titulo {
-    font-size: 40px; 
-    margin-bottom: 12px; 
-    color: var(--letra); 
+    /* Título descriptivo de la sección de calificaciones */
+    font-size: 40px;
+    margin-bottom: 12px;
+    color: var(--letra);
     margin-top: 60px;
 }
-
 .calificaciones__estrellas {
-    font-size: 50px; 
-    color: #ffc107; 
-    margin-bottom: 10px; 
+    /* Estilos para la representación visual de las estrellas de calificación */
+    font-size: 50px;
+    color: #ffc107;
+    margin-bottom: 10px;
     margin-top: 30px;
 }
-
 .calificaciones__valor {
-    font-size: 30px; 
-    color: #171933; 
+    /* Estilos para el valor numérico de la calificación */
+    font-size: 30px;
+    color: #171933;
     margin-top:30px;
 }
+
 /* ejercicio 12 */
 .video{
+    /* Estilos para el reproductor de video embebido */
     width: 900px;
     height: 600px;
     margin-top: 50px;
     border-radius: 10px;
 }
+
 /* ejercicio 13 */
+.sidebar {
+    /* Barra lateral de navegación o de información adicional */
+    width: 250px;
+    height: 765px;
+    background-color: var(--color_secundario);
+    border: 1px solid var(--fondo);
+    border-radius: 15px;
+    padding: 18px 12px;
+    margin-top: -34px;
+    float: left;
+}
+.sidebar__titulo {
+    /* Título principal de la barra lateral */
+    padding-top: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--fondo);
+    text-align: center;
+}
+.sidebar__enlace {
+    /* Estilos para los enlaces de navegación dentro de la barra lateral */
+    display: block;
+    margin-top: 70px;
+    color: var(--card);
+    text-decoration: none;
+    padding: 7px 0;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    margin-bottom: 15px;
+}
+.sidebar__enlace:hover {
+    /* Efecto hover para los enlaces de la barra lateral */
+    background-color: #e3f0ff;
+}
+
 /* ejercicio 14 */
+.carrito {
+    /* Contenedor principal de la simulación de un carrito de compras */
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color_secundario);
+    border: 1px solid var(--fondo);
+    border-radius: 8px;
+    margin-top: 150px;
+}
+.carrito__titulo {
+    /* Título de la sección del carrito de compras */
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--fondo);
+    text-align: center;
+}
+.carrito__item {
+    /* Estilos para cada producto o artículo listado en el carrito */
+    margin-bottom: 10px;
+    color: var(--fondo);
+    font-size: 30px;
+    text-align: center;
+}
+.carrito__total {
+    /* Muestra el total a pagar en el carrito de compras */
+    font-weight: bold;
+    color: var(--barra);
+    margin-top: 16px;
+    text-align: center;
+    font-size: 40px;
+}
+
 /* ejercicio 15 */
+.blog {
+    /* Contenedor principal de una sección de blog */
+    max-width: 600px;
+    background-color: var(--color_secundario);
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid var(--fondo);
+}
+.blog__publicacion {
+    /* Estilos para cada artículo o publicación individual dentro del blog */
+    border-radius: 8px;
+    padding: 24px 18px;
+}
+.blog__titulo {
+    /* Título de una publicación de blog */
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: var(--fondo);
+    text-align: center;
+}
+.blog__meta {
+    /* Información adicional de la publicación (autor, fecha) */
+    font-size: 20px;
+    color: var(--card);
+    margin-bottom: 18px;
+    text-align: center;
+}
+.blog__parrafo {
+    /* Estilos para los párrafos de texto dentro de una publicación de blog */
+    margin-bottom: 16px;
+    color: var(--fondo);
+    line-height: 1.6;
+}
