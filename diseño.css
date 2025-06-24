@@ -437,6 +437,12 @@ body{
     margin-top:30px;
 }
 /* ejercicio 12 */
+.video{
+    width: 900px;
+    height: 600px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
 /* ejercicio 13 */
 /* ejercicio 14 */
 /* ejercicio 15 */
