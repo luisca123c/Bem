@@ -1,0 +1,36 @@
+/*Creamos custom properties*/
+:root{
+    --fondo:#1e2144;
+    --cuadros:#7F85C7;
+    --letra:#e6e6e6;
+}
+/* reiniciamos los estilos a todo el html */
+*{
+    margin: 0;
+    padding: 0;
+}
+/*definimos estilos al body*/
+body{
+    background-color: var(--fondo);
+    color: var(--letra);
+    height: 200vh;
+}
+/*Header*/
+
+.header{
+    width: 100vw;
+    height: 40px;
+    position: fixed;
+    top: 0px; /*El header no se alejara del top*/
+    background-color: var(--cuadros);
+}
+.header__nav{
+    padding: 11px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header__a{
+    color: var(--letra);
+    text-decoration: none;
+    margin-left: 50px;
+}
