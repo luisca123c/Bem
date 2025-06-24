@@ -1,8 +1,11 @@
 /*Creamos custom properties*/
 :root{
     --fondo:#1e2144;
-    --cuadros:#7F85C7;
+    --barra:#5e67c9;
+    --cuadros: #7F85C7;
     --letra:#e6e6e6;
+    --card:#3E458E;
+    --color_secundario: #abb1f1;
 }
 /* reiniciamos los estilos a todo el html */
 *{
@@ -19,17 +22,91 @@ body{
 
 .header{
     width: 100vw;
-    height: 40px;
+    height: 60px;
     position: fixed;
     top: 0px; /*El header no se alejara del top*/
-    background-color: var(--cuadros);
+    /* background-color: var(--barra); */
 }
-.header__nav{
-    padding: 11px;
+.header__div{
     margin: 0 auto;
     text-align: center;
 }
 .header__a{
+    margin-top: 10px;
+    color: var(--letra);
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--card);
+    border-radius: 15px;
+}
+.header__a--hover:hover{
+    background-color: var(--cuadros);
+}
+.ejercicios{
+    background-color: var(--cuadros);
+    height: 800px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.titulos{
+    color: var(--letra);
+    font-size: 30px;
+}
+/* ejercicio 1 */
+.card{
+    height: 511px;
+    width: 610px;
+    background-color: var(--card);
+    margin: 0 auto;
+    margin-top: 80px;
+    border: var(--fondo) solid 2px;
+    border-radius: 5px;
+}
+.card__p{
+    display: inline-block;
+    height: 23px;
+    width: 610px;
+    color: var(--letra);
+    font-size: 20px;
+    background-color: var(--barra);
+    border-bottom: var(--fondo) solid 2px;
+}
+.card__img{
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+}
+.card__h4{
+    display: inline-block;
+    height: 80px;
+    width: 610px;
+    border-top: var(--fondo) solid 2px;
+    color: var(--letra);
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: var(--barra);
+}
+/* ejercicio 2 */
+.navegacion{
+    width: 1000px;
+    height: 40px;
+    position: relative;
+    top: 30px; 
+    background-color: var(--barra);
+}
+.navegacion__div{
+    padding: 11px;
+    margin: 0 auto;
+    text-align: center;
+}
+.navegacion__a{
     color: var(--letra);
     text-decoration: none;
     margin-left: 50px;
